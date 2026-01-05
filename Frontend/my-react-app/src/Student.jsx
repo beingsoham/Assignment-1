@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Student.css";
 
 export default function Students() {
   const [students, setStudents] = useState([]);
@@ -11,10 +12,11 @@ export default function Students() {
 
   
   return (
-    <div>
+    <div className="student-container">
       <h2>Students List</h2>
 
-      <table border="1" cellPadding="8">
+      <div className="table-wrapper">
+      <table className="student-table">
         <thead>
           <tr>
             <th>ID</th>
@@ -37,6 +39,7 @@ export default function Students() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
