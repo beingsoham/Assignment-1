@@ -1,0 +1,23 @@
+.switch-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch-link {
+  color: #09c5a0;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+

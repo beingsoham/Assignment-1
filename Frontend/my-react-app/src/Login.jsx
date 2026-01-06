@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Login.css";
 
-export default function Login({ onSuccess }) {
+export default function Login({ onSuccess, onSignup }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -46,6 +46,14 @@ export default function Login({ onSuccess }) {
       <button type="submit">Login</button>
 
       {error && <p className="error">{error}</p>}
+
+      <p className="switch-text">
+         Don’t have an account?
+             <span className="switch-link" onClick={onSignup}>
+                 Sign up
+  </span>
+</p>
+
     </form>
   </div>
 );
