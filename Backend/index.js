@@ -11,21 +11,20 @@ app.use(express.json());
 app.post("/api/login", (req, res) => {
   const { email, password } = req.body;
 
-  // valid credentials
-  const VALID_EMAIL = "name@example.com";
-  const VALID_PASSWORD = "name123";
+  const VALID_EMAIL = "admin@example.com";
+  const VALID_PASSWORD = "admin123";
 
   if (email === VALID_EMAIL && password === VALID_PASSWORD) {
-    return res.json({
+    res.json({
       success: true,
       message: "Login successful"
     });
+  } else {
+    res.status(401).json({
+      success: false,
+      message: "Invalid email or password"
+    });
   }
-
-  return res.status(401).json({
-    success: false,
-    message: "Invalid email or password"
-  });
 });
 
 // student false api 

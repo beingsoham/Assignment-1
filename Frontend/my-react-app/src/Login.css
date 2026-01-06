@@ -45,7 +45,7 @@
 .login-container button {
   width: 100%;
   padding: 14px;
-  background-color: #007bff;
+  background-color: #09c5a0;
   color: white;
   border: none;
   border-radius: 8px;
@@ -57,7 +57,7 @@
 }
 
 .login-container button:hover {
-  background-color: #0056b3;
+  background-color: #018a6e;
   transform: translateY(-1px);
 }
 
