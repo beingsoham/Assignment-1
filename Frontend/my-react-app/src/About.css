@@ -1,0 +1,29 @@
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.about-card {
+  font-family: poppins, sans-serif;
+  width: 420px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.about-card h2 {
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about-card p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 15px;
+}

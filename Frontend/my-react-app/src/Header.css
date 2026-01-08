@@ -1,8 +1,33 @@
 .header {
-  background-color: #f1f1f1;
-  color: black;
-  padding: 15px;
-  text-align: left;
-    font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 20px;
 }
 
+.logo {
+  margin: 0;
+  padding: 20px;
+  border-radius: 22px;
+  background-color: #e4e6e6;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav button {
+  background: transparent;
+  color: green;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 12px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: green 2px solid;
+}
+.nav button:hover {
+  background: #09c5a0;
+  color: white;
+}
